@@ -13,9 +13,33 @@
         <div class="header-img-first"></div>
         <div class="header-img-second"></div>
         <div class="header-menu-container">
-          <button class="header-login-btn">Portal</button>
+          <a href="portal.html" class="header-login-btn">Login</a>
         </div>
+              <!--   login form -->
+<div class="login-page --hide">
+  <div class="form">
+    <form class="register-form --hide">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+      <button formaction="./portal.html" class="login-button">login</button>
+      <p class="message"> <a href="#" class=signupBtn >Opprette ny konto?</a></p>
+    </form>
+  </div>
+</div>
+<!--           -->
       </div>
+
     </header>
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,68 @@
+/* 
+
+#2C2A29  
+#A59C94  button
+#CED9E5  input
+#4E5B73  frame
+*/
+
+body{
+   background-color: #2C2A29; 
+   font-size: 14px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-container{
+background-color: #4E5B73;
+height: 45px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+max-width: 80vw;
+margin: auto;
+border-radius: 6px;
+overflow: hidden;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    color:#CED9E5   ;
+    background-color: #A59C94 ;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 3px 3px #2C2A29  ;
+   
+}
+.navbar-logo{
+    padding-top: 25px;
+    height: 130px;
+    
+    
+}
+.nav-link:hover{
+color: #2C2A29  ;
+animation: navbarBtnScale 0.1s forwards
+}
+.nav-link:active{
+    animation: navbarBtnClick 0.1s  ;
+        
+}
+@keyframes navbarBtnScale {
+    0%{
+
+    }
+    100%{
+        
+        transform: translateY(-2px);
+    }
+}
+@keyframes navbarBtnClick {
+    0%{transform: translateY(-2px);
+        
+    }
+    100%{
+        transform: translateY(-1px) ;
+    }
+}
