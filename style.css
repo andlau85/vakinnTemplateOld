@@ -1,0 +1,43 @@
+/* 
+
+#2C2A29
+#A59C94
+#CED9E5
+#4E5B73
+*/
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 600px;
+}
+
+.header-img-container {
+  position: relative;
+  height: 100vh;
+  background-color: #ced9e5;
+}
+
+.header-img-first,
+.header-img-second {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header-img-first {
+  background-image: url(./img/header.jpg);
+  clip-path: polygon(100% 0, 100% 18%, 15% 100%, 0 100%, 0 0);
+}
+
+.header-img-second {
+  background-image: url(./img/header_trans_logo.png);
+
+  background-position: right bottom;
+  background-size: 70vh;
+}
