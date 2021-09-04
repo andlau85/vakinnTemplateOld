@@ -1,4 +1,15 @@
+
+:root{
+    --bgcolor:#2C2A29 ;
+    --btncolor:#A59C94 ;
+    --inputcolor:#CED9E5 ;
+    --framecolor:#4E5B73;
+   }
+
 /* 
+
+
+
 
 #2C2A29  
 #A59C94  button
@@ -6,16 +17,21 @@
 #4E5B73  frame
 */
 
+*{
+    padding:0;
+    margin:0;
+}
+
 body{
    background-color: #2C2A29; 
-   font-size: 14px;
+   font-size: 16px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .navbar-container{
 background-color: #4E5B73;
 height: 45px;
 display: flex;
-justify-content: flex-start;
+justify-content: center;
 align-items: center;
 max-width: 80vw;
 margin: auto;
@@ -24,28 +40,80 @@ overflow: hidden;
 
 }
 
-.nav-link{
-    text-decoration: none;
-    color:#CED9E5   ;
-    background-color: #A59C94 ;
-    padding: 5px 10px;
-    margin: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    box-shadow: 3px 3px #2C2A29  ;
-   
-}
+
 .navbar-logo{
     padding-top: 25px;
     height: 130px;
     
     
 }
-.nav-link:hover{
-color: #2C2A29  ;
-animation: navbarBtnScale 0.1s forwards
+
+
+/* ------------------SIDEBAR------------------- */
+
+.sidebar-container{
+    position: fixed;
+    height: 100vh;
+    background:var(--inputcolor);
+    overflow: hidden;
+    width: 1em;
 }
-.nav-link:active{
+.sidebar-container ul{
+    
+}
+.sidebar-container:hover{
+    width: 11em;
+}
+
+.sidebar-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+    height: 100%;
+    width: 100%;
+   
+  align-items: flex-start;
+  
+     
+}
+
+.sidebar-item{
+    background: var(--framecolor);
+    list-style: none;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 7em;
+   background-color: #A59C94 ;
+   box-shadow: 3px 3px #2C2A29  ;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+.sidebar-item a{
+    text-decoration: none;
+    color:#CED9E5   ;
+    
+    
+    font-size: 16px;
+   
+}
+.sidebar-item:last-child{
+    margin-top: auto;
+}
+
+
+.sidebar-item:hover{
+    color: #2C2A29  ;
+    animation: navbarBtnScale 0.1s forwards
+}
+.sidebar-item:hover a{
+    color: #2C2A29  ;
+    
+}
+.sidebar-item:active{
     animation: navbarBtnClick 0.1s  ;
         
 }
@@ -66,3 +134,7 @@ animation: navbarBtnScale 0.1s forwards
         transform: translateY(-1px) ;
     }
 }
+
+
+/* ------------------SIDEBAR END--------------- */
+
