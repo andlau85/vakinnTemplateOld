@@ -36,7 +36,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 80vw;
+  max-width: 70vw;
   margin: auto;
   border-radius: 6px;
   overflow: hidden;
@@ -159,7 +159,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 80vw;
+  max-width: 70vw;
 }
-
+.first-container input {
+  margin: 1em 2em;
+}
 /* -----------------FIRST CONTAINER ENDS-------- */
